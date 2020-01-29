@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Facebook</title>
+        <meta charset="utf-8">
+        <style>
+            body{
+                font-family: "Segoe UI",Arial,sans-serif;
+                font-size: 19px;
+                background-image: url(https://www.xmple.com/wallpaper/gradient-white-blue-linear-1920x1080-c2-ffffff-add8e6-a-150-f-14.svg);
+            }
+            header{
+                background-color: #385898;
+                color: white;
+                transform: translate(-8px, -32%);
+                padding: 20px 10px;
+                height: 83px;
+                z-index: 1;
+                overflow: hidden;
+            }
+            header a {
+                float: left;
+                color: white;
+                text-align: center;
+                padding: 50px;
+                font-size: 10px; 
+                line-height: 25px;
+                border-radius: 4px;
+            }
+            header a.logo {
+                font-size: 35px;
+                font-weight: bold;
+            }
+            h1{
+                top: 5px;
+                left: 30px; 
+            }
+            h4{
+                font-weight: 400;
+                line-height: 1px;
+            }
+            h6{
+                color: slategrey;
+                line-height: 20px;
+            }
+            a{
+                color: rgb(35, 112, 189);
+            }
+            p{
+                font-size: 11px;
+            }
+            input[type=name], input[type=surname] {
+                padding: 13px 12px;
+                margin: 1px 8px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                text-align: center;
+            }
+            input[type=mail]{
+                padding: 13px 113px;
+                margin: 8px 8px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                text-align: center;
+            }
+            button{
+                border: 2px solid #69a74e;
+                background-color: #69a74e;
+                border-radius: 5px;
+                color: white;
+                padding: 10px 40px;
+                text-align: center;
+                font-size: 16px;
+                cursor: pointer; 
+            }
+            button:hover{
+                background-color: rgb(105, 185, 105);
+            }
+            button[type=log]{
+                border: 2px solid rgb(35, 112, 189);;
+                background-color: rgb(35, 112, 189);;
+                color: white;
+                padding: 1px 5px;
+            }
+            table{
+                width: 105%;
+            }
+            .uname{
+                display: block;
+                float: right;
+            }
+            .psw{
+                display: block;
+                float: right;
+            }
+            .split {
+                height: 80%;
+                width: 50%;
+                position: fixed;
+                z-index: 1;
+                overflow-x: hidden;
+                padding-top: 20px;
+            }
+            .left {
+                left: 200px;
+                font-size: 22px;
+                color: #1D3C78;
+            }
+            .right {
+                right: 0;
+            }
+            .centered {
+                position: absolute;
+                top: 50%;
+                left: 43%;
+                transform: translate(-50%, -50%);
+                text-align: left;
+            }
+            .container {
+                line-height: 30px;
+                display: flex;
+                font-size: 30px;
+            }
+            .header-right {
+                color: white;
+                text-align: left;
+                padding: 30px;
+                font-size: 12px; 
+                line-height: 25px;
+                float: right;
+                display: table-row-group;
+            }
+            #weight{
+                font-weight: 700;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <header>
+            <a class="logo">facebook</a>
+            <div class="header-right">
+                <table>
+                    <tr>
+                        <th>Электронный адрес или номер телефона</th>
+                        <th>Пароль</th>
+                    </tr>
+                    <tr>
+                        <td><input type="email" name="email"></td>
+                        <td><input type="pass" name="pass"></td>
+                        <td><button type="log">Вход</button></td>
+                    </tr>
+                </table>
+            </div>
+        </header>
+
+        <content>
+            <div class="split left">
+                <label for="txt" id="weight">Facebook помогает вам всегда оставаться на <br>связи и общаться со своими знакомыми.</label>
+                <br>
+                <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y7/r/7XdR1KwCifL.png" width="550">
+            </div>
+            <div class="split right">
+                <div class="centered">
+                    <h1>Регистрация</h1>
+                    <h4>Быстро и легко.</h4>
+                    <div class="container">
+                        <input type="name" placeholder="Имя" name="name" required>
+                        <input type="surname" placeholder="Фамилия" name="sname" required>
+                    </div>
+                    <input type="mail" placeholder="Телефон" name="mail" required>
+                    <input type="mail" placeholder="Новый пароль" name="mail" required>
+                    <a>Дата рождения</a>
+                    <br>
+                    <select name="day" id="day">
+                        <option value="day">День</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+                    <select name="month" id="month">
+                        <option value="month">Месяц</option>
+                        <option>янв</option>
+                        <option>фев</option>
+                        <option>мар</option>
+                        <option>апр</option>
+                        <option>май</option>
+                        <option>июн</option>
+                        <option>июл</option>
+                        <option>авг</option>
+                        <option>сен</option>
+                        <option>окт</option>
+                        <option>ноя</option>
+                        <option>дек</option>
+                    </select>
+                    <select name="year" id="year">
+                        <option value="year">Год</option>
+                        <option>2010</option>
+                        <option>2009</option>
+                        <option>2008</option>
+                        <option>2007</option>
+                        <option>2006</option>
+                        <option>2005</option>
+                        <option>2004</option>
+                        <option>2003</option>
+                        <option>2002</option>
+                        <option>2001</option>
+                        <option>2000</option>
+                        <option>1999</option>
+                        <option>1998</option>
+                        <option>1997</option>
+                        <option>1996</option>
+                        <option>1995</option>
+                        <option>1994</option>
+                        <option>1993</option>
+                        <option>1992</option>
+                        <option>1991</option>
+                        <option>1990</option>
+                    </select>
+                    <br>
+                    <a>Пол</a>
+                    <br>
+                    <input type="radio" name="fem" id="yes" value="fem">
+                    <label for="fem">Женщина</label>
+                    <input type="radio" name="male" id="no" value="male">
+                    <label for="male">Мужчина</label>
+                    <input type="radio" name="else" id="no" value="else">
+                    <label for="else">Другое</label>
+                    <br>
+                    <p>Нажимая кнопку Регистрация, вы принимаете <a href="https://www.facebook.com/legal/terms/update">Условия</a>, <a href="https://www.facebook.com/about/privacy/update">Политику использования данных</a> и <a href="https://www.facebook.com/policies/cookies/">Политику в отношении файлов cookie</a>. Вы можете получать от нас SMS-уведомления, отказаться от которых можно в любой момент.</p>
+                    <button type="reg">Регистрация</button>
+                    <h6><a href="https://www.facebook.com/pages/creation/?ref_type=registration_form">Создать страницу</a> знаменитости, музыкальной группы или компании.</h6>
+                </div>
+        </content>
+
+    </body>
+</html>

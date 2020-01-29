@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Instagram</title>
+        <meta charset="utf-8">
+        <style>
+            body{
+                background-image: url(/static/images/homepage/home-phones.png/43cc71bb1b43.png);
+            }
+            h3{
+                color: darkgray;
+            }
+            h5{
+                color: darkgray;
+            }
+            a{
+                color: dimgrey
+            }
+            button{
+                border: 1px solid #1c99e7;
+                border-radius: 6px;
+                padding: 6px 16px;
+                text-align: center;
+                font-size: 16px;
+                cursor: pointer; 
+                background-color: #1c99e7;
+                width: 300px;
+                color: white;
+            }
+            input{
+                padding: 13px 80px;
+                margin: 8px 8px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                text-align: center;
+            }
+            .phones IMG{
+                position: relative;
+            }
+            .black-phone{
+                top: 100px;
+                left: 150px;
+                z-index: 1;
+            }
+            .phone{
+                top: 110px;
+                left: -200px;
+                z-index: 2;
+            }
+            .screenshot{
+                left: -475px; 
+                top: 20px;
+                z-index: 5;
+            }
+            .container {
+                line-height: 20px;
+                padding: 20px 20px;
+                margin: 20px 20px;
+                font-size: 30px;
+            }
+            #registration{
+                position: absolute;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                top: 10%;
+                left: 53%;
+                float: right;
+                width: 350px;
+                text-align: center;
+                background-color: #fff;
+                border: 1px solid rgb(230, 230, 230);
+                top: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p class="phones">
+            <img src="https://fora.kz/images/content/products/601975/iphone-7-32gb-black_580b438b4c75f.jpg" width="570" class="black-phone">
+            <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yW/r/I_IA0dZSTnH.png" width="310" class="phone">
+            <img src="https://www.instagram.com/static/images/homepage/screenshot3.jpg/f0c687aa6ec2.jpg" width="231" class="screenshot">
+        </p>
+        <div id="registration">
+            <br>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png" width="200px">
+            <h3>Зарегистрируйтесь, чтобы<br> смотреть фото и видео ваших<br> друзей.</h3>
+            <button type="login">Войти через Facebook</button>
+            <h3>или</h3>
+            <div id="container">
+                <input type="text" placeholder="Моб. телефон или эл. адрес" name="text">
+                <input type="name" placeholder="Имя и фамилия" name="name">
+                <input type="text" placeholder="Имя пользователя" name="uname">
+                <input type="password" placeholder="Пароль" name="psw">
+                <button type="login">Регистрация</button>
+            </div>
+            <br>
+            <h5>Регистрируясь, вы принимаете<br> наши <a href="https://help.instagram.com/581066165581870">Условия</a>, <a href="https://help.instagram.com/519522125107875">Политику<br> использования данных</a> и <br><a href="https://help.instagram.com/1896641480634370?ref=ig">Политику в отношении файлов <br>cookie</a>.</h5>
+            <br>
+            <p>Есть аккаунт? <a href="https://www.instagram.com/accounts/login/?hl=ru&source=auth_switcher">Вход</a></p>
+        </div>
+    </body>
+</html>

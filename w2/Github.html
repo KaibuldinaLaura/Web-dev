@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GitHub</title>
+        <meta charset="utf-8">
+        <style>
+            body{
+                background-image: url(/images/modules/site/heroes/simple-codelines.svg);
+                background-color: #2b3137;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            header{
+                background-color: black;
+                transform: translate(-1%, -10%);
+                width: 101.58%;
+            }
+            h1{
+                font-size: 60px;
+                font-weight: 550;
+            }
+            a{
+                color: white;
+            }
+            h5{
+                color: black;
+                margin-left: 10px;
+                line-height: 1px;
+            }
+            h6{
+                font-size: 15px;
+            }
+            p{
+                color: dimgrey;
+                font-size: 12px;
+            }
+            input{
+                padding: 13px 120px;
+                margin: 8px 8px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                text-align: center;
+            }
+            input[type=search]{
+                background-color: #2b3137;
+                float: right;
+                padding: 8px 50px;
+                border: 1px solid dimgray;
+                border-radius: 0px;
+                text-align: center;
+            }
+            input[type=search]:hover{
+                background-color: white;
+            }
+            button{
+                border: 2px solid #69a74e;
+                background-color: #69a74e;
+                border-radius: 5px;
+                color: white;
+                padding: 20px 150px;
+                text-align: center;
+                font-size: 16px;
+                cursor: pointer; 
+                margin-left: 2px;
+            }
+            table button{
+                background-color: black;
+                border: 2px solid black;
+                color: white;
+                padding: 10px 30px;
+                text-align: center;
+                font-size: 16px;
+                cursor: pointer; 
+                margin-left: 2px;
+            }
+            table button[type=su]{
+                border: 1px solid white;
+            }
+            table button:hover{
+                color: grey;
+            }
+            .info{
+                color: white;
+                font-size: 20px;
+                position: absolute;
+                left: 0;
+                width: 50%;
+                text-align: left;
+            }
+            .centered {
+                position: absolute;
+                top: 50%;
+                left: 40%;
+                transform: translate(-50%, -50%);
+                text-align: left;
+            }
+            .text{
+                color: darkgray;
+                font-size: 21px;
+            }
+            .link{
+                color: blue;
+            }
+            .else{
+                margin-left: 7px;
+            }
+            #registration{
+                position: absolute;
+                transform: translate(170%,  20%);
+                float: right;
+                width: 440px;
+                text-align: left;
+                background-color: #fff;
+                border: 1px solid rgb(230, 230, 230);
+                top: 20px;
+            }
+            #image{
+                float: left;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <img id="image" src="https://www.agconnect.nl/sites/ag/files/styles/article_main_image/public/Github%20logo.png?itok=VYi8VRAL" alt="GitHub logo" width="55">
+            <table>
+                <tr>
+                    <th><button type="WhyGitHub">Why GitHub?</th>
+                    <th><button type="ep">Enterprise</th>
+                    <th><button type="exp">Explore</button></th>
+                    <th><button type="mp">Marketplace</button></th>
+                    <th><button type="pr">Pricing</button></th>
+                    <th><input type="search" placeholder="Search GitHub"></th>
+                    <th><button type="si">Sign in</button></th>
+                    <th><button type="su">Sign up</button></th>
+                </tr>
+            </table>
+        </header>
+        
+        <div class="info centered">
+            <h1>Built for <br>developers</h1>
+            <p class="text">GitHub is a development platform inspired by the <br>way you work. From <a href="https://github.com/open-source">open source</a> to <a href="https://github.com/enterprise">business</a>, you <br>can host and review code, manage projects, and <br>build software alongside 40 million developers.</p>
+        </div>
+
+        <div id="registration">
+            <br>
+            
+            <div id="container">
+                <h5>  Username</h5>
+                <input type="text" name="uname">
+                <h5>  Email</h5>
+                <input type="text" name="text">
+                <h5>  Password</h5>
+                <input type="text" name="text">
+                <br>
+                <p class="else">Make sure it's at least 15 characters OR at least 8 characters including a number and a lowercase letter. <a class="link" href="https://help.github.com/en/github/authenticating-to-github/creating-a-strong-password">Learn more.</a></p>
+                <button type="login">Sign up for GitHub</button>
+                <p class="else">By clicking “Sign up for GitHub”, you agree to our <a class="link" href="https://help.github.com/en/github/site-policy/github-terms-of-service">Terms of Service</a> and <a class="link" href="https://help.github.com/en/github/site-policy/github-privacy-statement">Privacy Statement</a>. We’ll occasionally send you account related emails.</p>
+                <br>
+            </div>
+        </div>
+    </body>
+</html>
