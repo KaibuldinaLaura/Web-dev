@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ToDo List</title>
+        <meta charset="utf-8">
+        <style>
+            body{
+                background-color: white;
+                color: black;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 400;
+            }
+            header{
+                background-color: black;
+                transform: translate(-1%, -60%);
+                width: 101.58%;
+            }
+            h5{
+                padding-left: 4%;
+                color: gray;
+                line-height: 350%;
+                font-size: 100%;
+            }
+            form[name="myForm"]{
+                padding-left: 5%;
+            }
+            input{
+                padding: 1% 5%;
+                margin: 1% 0;
+                border-radius: 4px;
+            }
+            input[type=text]{
+                width: 50%;
+                border: 1px solid #ccc;
+            }
+            ul{
+                margin: 0;
+                padding: 0;
+            }
+            ul li{
+                cursor: pointer;
+                padding: 12px 8px 12px 40px;
+                list-style-type: none;
+                font-size: 90%;
+                transition: 0.2s;
+                border: 1px solid #ccc;
+            }
+            ul li::before{
+                content: '☐ ';
+                color: rgb(57, 155, 235);
+            }
+            ul li.checked{
+                text-decoration: line-through;
+            }
+            ul li.checked::before{
+                content: '☑ ';
+                color: rgb(57, 155, 235);
+            }
+            .close{
+                position: relative;
+                float: right;
+            }
+            .addButton{
+                background-color: steelblue;
+                border: 1px solid steelblue;
+                color: white;
+                text-align: center;
+                font-size: 16px;
+                cursor: pointer;
+                border-radius: 4px;
+                padding: 0.7% 1.5%;
+            }
+            .addButton:hover{
+                background-color: rgb(42, 91, 131);
+            }
+            #main{
+                padding-left: 20%;
+            }
+            #list{
+                margin: 1% 0;
+                border-radius: 4px;
+                width: 70%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h5>ToDo List</h5>
+        </header>
+
+        <div id="main">
+            <h1>ToDo List</h1>
+            <form name="myForm">
+                <input type="text" id="text" placeholder="New Task">
+                <span onclick="add()" class="addButton">Add</span>
+            </form>
+            <br>
+            <ul id="list">
+                <li class="checked">First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+            </ul>
+        </div>
+
+        <script src="C:\Users\Laura\source\repos\Web-dev\w3\ToDo List.js"></script>
+    </body>
+</html>
