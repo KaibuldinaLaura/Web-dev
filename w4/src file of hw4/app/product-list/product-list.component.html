@@ -1,0 +1,10 @@
+<h2>Products</h2>
+
+<button (click)="share()">
+    <a id="share" href="https://web.whatsapp.com/send?phone=+77017299491&text=http://localhost:4200/" target="_blank">Share</a>
+</button>
+
+<div class="allProducts" *ngFor="let product of products">
+    <app-product-item [product]="product">
+    </app-product-item>
+</div>

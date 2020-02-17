@@ -1,0 +1,21 @@
+<h3>
+    <a [title]="product.name + ' details'">
+        {{ product.name }}
+    </a>
+</h3>
+
+<a *ngIf="product.image" href="large.webp" class="MagicZoom" data-options="zoomPosition: inner">
+    <img src="{{ product.image }}" width="70%">
+</a>
+
+<p *ngIf="product.description">
+    Description: {{ product.description }}
+</p>
+
+<p *ngIf="product.rating">
+    Rating: {{ product.rating }}
+</p>
+
+<p *ngIf="product.price">
+    Price: US ${{ product.price }}
+</p>
