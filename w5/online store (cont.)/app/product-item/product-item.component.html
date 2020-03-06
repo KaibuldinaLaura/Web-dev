@@ -1,0 +1,26 @@
+<div class="item"> 
+  <div class="item_header"> 
+    <h3> 
+      <a [title]="stradivarius_product.name + ' description'"> 
+        {{ stradivarius_product.name }} 
+      </a> 
+    </h3> 
+    <p *ngIf="stradivarius_product.rating" class="item_rating"> 
+      <i class="material-icons">star</i> 
+      {{ stradivarius_product.rating }} / 10 
+    </p> 
+  </div> 
+ 
+  <div class="item-carousel"> 
+      <img src="{{ stradivarius_product.image }}"> 
+  </div> 
+ 
+  <p *ngIf="stradivarius_product.description" class="item_description"> 
+    Description: {{ stradivarius_product.description }} 
+  </p>  
+  <div class="item_button"> 
+    <button class="link" (click)="redirect(stradivarius_product.link)">Redirect</button> 
+    <a class="share" href="//www.facebook.com/sharer/sharer.php?u={{stradivarius_product.link}};"><i class="material-icons">share</i></a> 
+    <button class="see-more">See more</button> 
+  </div> 
+</div>
