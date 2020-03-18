@@ -1,4 +1,3 @@
-# Return the number of even ints in the given array.
 def count_evens(nums):
     count = 0
     for n in nums:
